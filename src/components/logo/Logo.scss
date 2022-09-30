@@ -1,0 +1,21 @@
+@import '../../design-tokens/animations.scss';
+
+.logo {
+  position: absolute;
+  top: 4vh;
+  left: 6vw;
+  max-width: 80px;
+  z-index: 90;
+  animation: fade-in 2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+
+  a.white {
+    filter: invert(100%) sepia(0%) saturate(18%) hue-rotate(314deg)
+      brightness(106%) contrast(104%);
+  }
+}
+@media only screen and (max-width: 768px) {
+  .logo {
+    top: 3vh;
+    max-width: 60px;
+  }
+}

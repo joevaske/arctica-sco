@@ -1,0 +1,30 @@
+@import '../../design-tokens/variables.scss';
+.footer-one {
+  &__logo {
+    width: 5rem;
+  }
+  h3 {
+    font-family: $font-gilroy-extrabold;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    margin-top: 20px;
+  }
+  &__logo-sorger {
+    max-width: 9rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .footer-one {
+    &__logo {
+      width: 3.5rem;
+      display: block;
+      margin: 0 auto;
+    }
+    h3 {
+      text-align: center;
+    }
+    &__logo-sorger {
+      max-width: 9rem;
+    }
+  }
+}

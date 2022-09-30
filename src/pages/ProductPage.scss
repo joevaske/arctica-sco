@@ -1,0 +1,19 @@
+@import '../design-tokens/variables.scss';
+
+.product-page {
+  width: 100%;
+  height: 100vh;
+  background-color: $color-brownyellow;
+  background-image: url('../images/backgrounds/Background.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+}
+
+@media only screen and (max-width: 768px) {
+  .product-page {
+    background-image: url('../images/backgrounds/Background-mob.jpg');
+  }
+}

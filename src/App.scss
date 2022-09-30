@@ -1,0 +1,90 @@
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+@font-face {
+  font-family: 'Gilroy-ExtraBold';
+  src: local('Gilroy-ExtraBold'),
+    url(./fonts/GilroyExtraBold.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Gilroy-SemiBold';
+  src: local('Gilroy-SemiBold'),
+    url(./fonts/GilroySemiBold.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Gilroy-Medium';
+  src: local('Gilroy-Medium'), url(./fonts/GilroyMedium.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Gilroy-SemiBold';
+  src: local('Gilroy-SemiBold'),
+    url(./fonts/GilroySemiBold.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Chronicle';
+  src: local('Chronicle'), url(./fonts/Chronicle.ttf) format('truetype');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+@import './design-tokens/variables.scss';
+
+/************************
+*  Ultimate Styling
+*
+************************/
+
+body {
+  font-family: $font-chronicle;
+}
+
+h1,
+h2,
+h3 {
+  font-family: $font-gilroy-extrabold;
+}
+
+/************************
+*  Helpers
+*
+************************/
+@media only screen and (max-width: 768px) {
+  .mobile-invisible {
+    display: none;
+  }
+}

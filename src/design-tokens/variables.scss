@@ -1,0 +1,48 @@
+/************************
+*  VARIABLES
+*
+************************/
+
+/* Fonts */
+$font-gilroy-extrabold: 'Gilroy-ExtraBold';
+$font-gilroy-medium: 'Gilroy-Medium';
+$font-gilroy-semibold: 'Gilroy-SemiBold';
+$font-chronicle: 'Chronicle';
+$font-poppins: 'Poppins';
+
+/* Colors */
+
+$color-white: #fff;
+$color-black: #000;
+$color-brownyellow: #d7b46a;
+
+$color-gray: #212020;
+$color-gray-medium: #272727;
+$color-gray-light: #828282;
+
+/************************
+*  Mixins
+*
+************************/
+
+@mixin containerWidth {
+  width: 80vw;
+}
+
+@mixin centerTop {
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+@mixin centerAbsolute {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin transitionEase {
+  transition: all 0.3s ease;
+}

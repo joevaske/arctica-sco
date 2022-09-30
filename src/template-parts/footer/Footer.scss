@@ -1,0 +1,26 @@
+@import '../../design-tokens/variables.scss';
+
+.footer {
+  width: 100%;
+  background-color: $color-black;
+
+  color: $color-white;
+
+  &__main {
+    padding: 4vh 6vw 50px 6vw;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .footer {
+    &__main {
+      padding: 4vh 6vw 20px 6vw;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: column;
+    }
+  }
+}

@@ -1,0 +1,9 @@
+@import '../../design-tokens/variables.scss';
+
+.copyrights {
+  width: 100%;
+  text-align: center;
+  font-family: $font-gilroy-semibold;
+  color: $color-gray-light;
+  font-size: 0.8rem;
+}
