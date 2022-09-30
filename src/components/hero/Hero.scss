@@ -34,7 +34,7 @@
   &__img {
     position: absolute;
     right: 6vw;
-    top: 0;
+    bottom: 0;
     z-index: 55;
     animation: fade-in 2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
 
@@ -68,7 +68,8 @@
       }
     }
     &__img {
-      position: static;
+      position: absolute;
+      bottom: 40px;
       margin: 0 auto;
       width: 90vw;
 
