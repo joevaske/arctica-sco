@@ -33,7 +33,7 @@
   }
   &__img {
     position: absolute;
-    right: 6vw;
+    right: 3vw;
     bottom: 0;
     z-index: 55;
     animation: fade-in 2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
@@ -53,6 +53,7 @@
       width: 100%;
       padding-left: 6vw;
       padding-top: 16vh;
+      z-index: 65;
       h1 {
         font-size: 1.2rem;
         line-height: 1.5rem;
@@ -72,10 +73,19 @@
       bottom: 40px;
       margin: 0 auto;
       width: 90vw;
-
+      z-index: -1;
       img {
         height: auto;
       }
+    }
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .hero {
+    &__text {
+      position: absolute;
+      left: 17vw;
+      width: 60%;
     }
   }
 }
