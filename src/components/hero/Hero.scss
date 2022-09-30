@@ -39,8 +39,8 @@
     animation: fade-in 2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
 
     img {
-      height: 100vh;
-      width: auto;
+      width: 100vh;
+      height: auto;
     }
   }
 }
@@ -71,6 +71,7 @@
       position: static;
       margin: 0 auto;
       width: 95vw;
+
       img {
         height: auto;
       }
